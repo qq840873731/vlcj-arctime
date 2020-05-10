@@ -75,7 +75,7 @@ public class NativeDiscovery {
     /**
      * Strategy implementations.
      */
-    private final NativeDiscoveryStrategy[] discoveryStrategies;
+    private final NativeDiscoveryStrategy[] discoveryStrategies = DEFAULT_STRATEGIES;
 
     /**
      * Create a native discovery component.
@@ -85,7 +85,6 @@ public class NativeDiscovery {
      * @param discoveryStrategies zero or more native discovery strategy implementations
      */
     public NativeDiscovery(NativeDiscoveryStrategy... discoveryStrategies) {
-        this.discoveryStrategies = DEFAULT_STRATEGIES;
     }
 
     /**

@@ -32,6 +32,7 @@ import static uk.co.caprica.vlcj.player.component.MediaPlayerSpecs.embeddedMedia
 /**
  * This is a simple test of the spec builder syntax and dynamic sub-classing.
  */
+@SuppressWarnings("serial")
 public class ComponentSpecTest extends VlcjTest {
 
     public static void main(String[] args) {

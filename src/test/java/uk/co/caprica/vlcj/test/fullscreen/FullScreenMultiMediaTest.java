@@ -43,6 +43,7 @@ import java.util.List;
  * This test searches for ".iso" media files, change the {@link #VIDEO_FILE_FILTER} to search for
  * other media file types.
  */
+@SuppressWarnings("serial")
 public class FullScreenMultiMediaTest extends VlcjTest {
 
     private static final FileFilter VIDEO_FILE_FILTER = new FileFilter() {

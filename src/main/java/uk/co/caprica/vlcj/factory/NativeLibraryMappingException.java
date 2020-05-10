@@ -31,6 +31,7 @@ package uk.co.caprica.vlcj.factory;
  * So we make the reasonable assumption when registering the direct-mapped native library that if NoClassDefFoundError
  * occurs this is the reason.
  */
+@SuppressWarnings("serial")
 public class NativeLibraryMappingException extends RuntimeException {
 
     public NativeLibraryMappingException(String message, Throwable cause) {

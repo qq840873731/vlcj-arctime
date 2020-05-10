@@ -45,6 +45,7 @@ import java.net.URL;
  * <p>
  * If the artwork is available, this test opens a frame to display it.
  */
+@SuppressWarnings("serial")
 public class MetaTest extends VlcjTest {
 
     public static void main(String[] args) throws Exception {
