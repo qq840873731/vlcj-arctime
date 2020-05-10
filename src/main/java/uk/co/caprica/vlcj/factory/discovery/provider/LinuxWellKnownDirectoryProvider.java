@@ -32,7 +32,9 @@ public class LinuxWellKnownDirectoryProvider extends WellKnownDirectoryProvider 
         "/usr/local/lib64",
         "/usr/lib/i386-linux-gnu",
         "/usr/lib",
-        "/usr/local/lib"
+        "/usr/local/lib",
+        "/snap/vlc/current/usr/lib",
+        "/snap/vlc/current/usr/lib/x86_64-linux-gnu"
     };
 
     @Override

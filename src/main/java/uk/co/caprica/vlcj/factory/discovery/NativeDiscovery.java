@@ -7,8 +7,6 @@ import uk.co.caprica.vlcj.binding.internal.libvlc_instance_t;
 import uk.co.caprica.vlcj.factory.MediaPlayerFactory;
 import uk.co.caprica.vlcj.factory.discovery.strategy.LinuxNativeDiscoveryStrategy;
 import uk.co.caprica.vlcj.factory.discovery.strategy.NativeDiscoveryStrategy;
-import uk.co.caprica.vlcj.factory.discovery.strategy.OsxNativeDiscoveryStrategy;
-import uk.co.caprica.vlcj.factory.discovery.strategy.WindowsNativeDiscoveryStrategy;
 import uk.co.caprica.vlcj.support.version.LibVlcVersion;
 
 import static uk.co.caprica.vlcj.binding.LibVlc.libvlc_new;
@@ -71,9 +69,7 @@ public class NativeDiscovery {
     private String discoveredPath;
 
     private static final NativeDiscoveryStrategy[] DEFAULT_STRATEGIES = new NativeDiscoveryStrategy[] {
-        new LinuxNativeDiscoveryStrategy(),
-        new OsxNativeDiscoveryStrategy(),
-        new WindowsNativeDiscoveryStrategy()
+        new LinuxNativeDiscoveryStrategy()
     };
 
     /**
@@ -89,7 +85,7 @@ public class NativeDiscovery {
      * @param discoveryStrategies zero or more native discovery strategy implementations
      */
     public NativeDiscovery(NativeDiscoveryStrategy... discoveryStrategies) {
-        this.discoveryStrategies = discoveryStrategies.length > 0 ? discoveryStrategies : DEFAULT_STRATEGIES;
+        this.discoveryStrategies = DEFAULT_STRATEGIES;
     }
 
     /**
