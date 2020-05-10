@@ -14,6 +14,7 @@ For building on a fresh Ubuntu 20.04, these steps should be run:
 
 ```bash
 sudo apt install git maven openjdk-8-jdk
+export LD_LIBRARY_PATH="/usr/lib/jvm/java-8-openjdk-amd64/lib/amd64/"
 
 git clone https://github.com/wegank/vlcj-arctime.git
 cd vlcj-arctime
